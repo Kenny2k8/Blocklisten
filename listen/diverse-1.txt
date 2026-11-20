@@ -5,15 +5,13 @@
 # Erläuterung und das gesamte Quellenverzeichnis:
 # https://github.com/Kenny2k8/Pihole-Blocklist/blob/master/Quellen.md
 # Quellen dieser Liste:
-# https://big.oisd.nl
-# https://v.firebog.net/hosts/static/w3kbl.txt
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Fake-Science
-# https://raw.githubusercontent.com/SoftCreatR/fakerando-domains/main/all.txt
-# https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/multi.txt
-# https://raw.githubusercontent.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/main/Google_hostnames_ABP.txt
-# https://raw.githubusercontent.com/autinerd/anti-axelspringer-hosts/master/axelspringer-hosts
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Corona-Blocklist
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/SupportingRussia
+# https://oisd.nl
+# https://firebog.net
+# https://github.com/RPiList/specials
+# https://github.com/SoftCreatR/fakerando-domains
+# https://github.com/hagezi/dns-blocklists
+# https://github.com/elliotwutingfeng/Inversion-DNSBL-Blocklists
+# https://github.com/autinerd/anti-axelspringer-hosts
 # Teil: 1 von 2
 # Domains in dieser Datei: 1.000.000
 0.0.0.0 0--0.site

@@ -5,17 +5,8 @@
 # Erläuterung und das gesamte Quellenverzeichnis:
 # https://github.com/Kenny2k8/Pihole-Blocklist/blob/master/Quellen.md
 # Quellen dieser Liste:
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock1
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock2
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock3
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock4
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock5
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/pornblock6
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/gambling
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/child-protection
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/DatingSites
-# https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/proxies
-# https://nsfw.oisd.nl
+# https://github.com/RPiList/specials
+# https://oisd.nl
 # Teil: 4 von 9
 # Domains in dieser Datei: 1.000.000
 0.0.0.0 flirta.wetplatecollodion.com
