@@ -1,10 +1,5 @@
 # Blockliste phishing
-# Diese Liste ist eine eigene Zusammenstellung von Kenny2k8.
-# Die Domains stammen aus den unten genannten Quellen. Sie wurden nach Thema
-# sortiert, und dieselbe Domain steht nur in einer Liste.
-# Erläuterung und das gesamte Quellenverzeichnis:
 # https://github.com/Kenny2k8/Pihole-Blocklist/blob/master/Quellen.md
-# Quellen dieser Liste:
 # https://github.com/RPiList/specials
 # https://github.com/namePlayer/dhl-scamlist
 # https://www.einmalzahlungzweihundert.de/bl-einmalzahlung.txt
