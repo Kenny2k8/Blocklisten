@@ -1,7 +1,7 @@
 # Pi-hole- und Technitium-Blocklisten
 
-Kenny2k8 stellt diese Hosts-Listen zusammen. Jede Domain steht nur in einer Datei.
-Die Herkunft steht in [Quellen.md](Quellen.md).
+Hier stehen die Adressen zum Einfügen in Pi-hole und Technitium.
+Die Herkunft der Domains steht in [Quellen.md](Quellen.md).
 
 In Pi-hole öffnest du **Group Management → Adlists** und fügst die Adressen ein.
 In Technitium öffnest du **Settings → Blocking → Block List URLs** und fügst dieselben Adressen ein.
