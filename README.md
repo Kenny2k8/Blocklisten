@@ -1,171 +1,72 @@
-# Pi-hole- und Technitium-Blocklisten
+# Schutz vor Malware, Phishing, Werbung und Tracking.
 
-Hier stehen die Adressen zum Einfügen in Pi-hole und Technitium.
-Die Herkunft der Domains steht in [Quellen.md](Quellen.md).
+Diese Listen sperren bekannte schädliche und unerwünschte Domains in deinem Netz. Pi-hole und Technitium laden sie als Hosts-Dateien und beantworten die Namen lokal.
 
-In Pi-hole öffnest du **Group Management → Adlists** und fügst die Adressen ein.
-In Technitium öffnest du **Settings → Blocking → Block List URLs** und fügst dieselben Adressen ein.
-Es sind 52 Adressen. Technitium erlaubt 255.
+Kenny2k8 holt die Domains aus öffentlichen Quellen, sortiert sie nach Thema und streicht Doppelungen. Jede Domain steht nur in einer Datei. Wächst ein Thema über eine Million Einträge, teilt er es in nummerierte Dateien.
 
-## Alle Adressen
+> [!NOTE]
+> Die Adressen zum Kopieren stehen in [blocklisten.md](blocklisten.md).
+> Woher die Domains kommen, steht in [Quellen.md](Quellen.md).
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/malware.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-01.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-02.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-03.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-04.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-05.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-06.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-07.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-08.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-09.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-10.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-11.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-12.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-13.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-14.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-15.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-16.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-17.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-18.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-19.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-20.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-21.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-22.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-23.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-24.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-25.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-26.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-27.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-28.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-29.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-30.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-31.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-32.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-33.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/fakeshops.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-1.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-2.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-3.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-4.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-5.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-6.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-7.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-8.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-9.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/tracking-1.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/tracking-2.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/werbung.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/dienste.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/overblock.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/diverse-1.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/diverse-2.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/standard.txt
-```
+## Was du hier findest
 
-## Nach Thema
+| Datei | Inhalt |
+| --- | --- |
+| [blocklisten.md](blocklisten.md) | Alle Listen-Adressen, gesamt und nach Thema |
+| [listen/](listen) | Die Hosts-Dateien selbst |
+| [Quellen.md](Quellen.md) | Die Herkunft, jedes Repository nur einmal |
 
-### Malware
+Eine Zeile in den Hosts-Dateien sieht so aus: `0.0.0.0 example.com`. Zeilen mit `#` am Anfang sind Hinweise. Pi-hole und Technitium übergehen sie.
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/malware.txt
-```
+## Pi-hole: Listen importieren
 
-### Phishing
+1. Öffne die Weboberfläche deines Pi-hole.
+2. Gehe zu **Group Management → Adlists**.
+3. Öffne [blocklisten.md](blocklisten.md) und kopiere die Adressen.
+4. Füge jede Adresse als eigene Adlist ein und speichere.
+5. Lade die Listen neu: **Tools → Update Gravity**, oder auf dem Pi der Befehl `pihole -g`.
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-01.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-02.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-03.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-04.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-05.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-06.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-07.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-08.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-09.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-10.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-11.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-12.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-13.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-14.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-15.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-16.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-17.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-18.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-19.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-20.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-21.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-22.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-23.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-24.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-25.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-26.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-27.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-28.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-29.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-30.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-31.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-32.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/phishing-33.txt
-```
+> [!TIP]
+> Du musst nicht jedes Thema nehmen. In [blocklisten.md](blocklisten.md) liegen die Adressen nach Thema getrennt. Werbung allein ist eine andere Wahl als Malware und Phishing zusammen.
 
-### Fakeshops
+Pi-hole speichert die Adresse. Beim nächsten Gravity-Lauf lädt es die aktuelle Datei von GitHub. Die Adresse in Pi-hole bleibt gleich, solange der Dateiname gleich bleibt.
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/fakeshops.txt
-```
+## Technitium: Listen importieren
 
-### Jugendschutz
+1. Öffne die Weboberfläche deines Technitium DNS Servers.
+2. Gehe zu **Settings → Blocking**.
+3. Trage unter **Block List URLs** dieselben Adressen ein, eine pro Zeile.
+4. Speichere. Technitium lädt die Listen beim nächsten Abruf.
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-1.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-2.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-3.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-4.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-5.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-6.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-7.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-8.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/jugendschutz-9.txt
-```
+Technitium nimmt höchstens 255 Listen-Adressen. In [blocklisten.md](blocklisten.md) stehen 52. Jede Adresse darf 255 Zeichen lang sein. Die Adressen hier bleiben darunter.
 
-### Tracking
+Technitium sperrt einen Namen und alles darunter. Steht `example.com` in der Liste, fallen dort auch `www.example.com` und `shop.example.com` weg. Pi-hole sperrt in einer normalen Hosts-Datei nur genau den eingetragenen Namen.
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/tracking-1.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/tracking-2.txt
-```
+## Themen
 
-### Werbung
+| Thema | Was dort landet |
+| --- | --- |
+| Malware | Schadsoftware, Stalkerware, Cryptojacking |
+| Phishing | Phishing und nachgebaute Bank-Domains |
+| Fakeshops | Falsche Shops und unseriöse Angebote |
+| Jugendschutz | Pornografie, Glücksspiel, Dating, Proxies |
+| Tracking | Tracker und Telemetrie |
+| Werbung | Werbenetze und Adserver |
+| Dienste | Einzelne Anbieter, etwa Amazon, Google, Samsung |
+| Diverse | Quellen, die in kein einzelnes Thema fallen |
+| Standard | Die zusammengefasste Liste von StevenBlack |
+| Overblock | Wenige sehr breite Domains |
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/werbung.txt
-```
+Die genauen Adressen zu jedem Thema stehen in [blocklisten.md](blocklisten.md).
 
-### Dienste
+## Overblock
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/dienste.txt
-```
+> [!WARNING]
+> `listen/overblock.txt` sperrt wenige sehr breite Namen, darunter `baidu.com` und `buff.ly`. Auf Technitium fällt damit der ganze Dienst aus, nicht nur eine einzelne Seite. Lass diese eine Adresse weg, wenn du das nicht willst.
 
-### Overblock
+## Wenn sich die Listen ändern
 
-Diese Datei sperrt wenige sehr breite Domains, darunter `baidu.com` und `buff.ly`.
+Kenny2k8 baut die Listen neu, wenn sich die Quellen ändern, und legt die neuen Dateien nach `listen/`. Die Adressen in Pi-hole und Technitium bleiben dieselben. Neu einfügen musst du nur, wenn eine Datei hinzukommt oder wegfällt. Das steht dann in [blocklisten.md](blocklisten.md).
 
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/overblock.txt
-```
-
-### Diverse
-
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/diverse-1.txt
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/diverse-2.txt
-```
-
-### Standard
-
-```
-https://raw.githubusercontent.com/Kenny2k8/Pihole-Blocklist/master/listen/standard.txt
-```
+> [!IMPORTANT]
+> Dieses Repository gehört nicht zu Pi-hole. Pi-hole findest du auf [pi-hole.net](https://pi-hole.net/). Die Dateien hier sind Listen, die du in Pi-hole oder Technitium importierst.
