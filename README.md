@@ -64,6 +64,12 @@ Die genauen Adressen zu jedem Thema stehen in [blocklisten.md](blocklisten.md).
 > [!WARNING]
 > `listen/overblock.txt` sperrt wenige sehr breite Namen, darunter `baidu.com` und `buff.ly`. Auf Technitium fällt damit der ganze Dienst aus, nicht nur eine einzelne Seite. Lass diese eine Adresse weg, wenn du das nicht willst.
 
+## Nutzung
+
+Du darfst diese Listen nutzen. Dazu gehört das Einbinden in Pi-hole, Technitium und andere DNS-Sperren, das Kopieren der Dateien und das Weitergeben dieser Zusammenstellung.
+
+Die Domains stammen aus den Quellen in [Quellen.md](Quellen.md). Deren eigene Lizenz bleibt an den Ursprungsdaten. Die Freigabe hier gilt für die Zusammenstellung in diesem Repository.
+
 ## Wenn sich die Listen ändern
 
 Kenny2k8 baut die Listen neu, wenn sich die Quellen ändern, und legt die neuen Dateien nach `listen/`. Die Adressen in Pi-hole und Technitium bleiben dieselben. Neu einfügen musst du nur, wenn eine Datei hinzukommt oder wegfällt. Das steht dann in [blocklisten.md](blocklisten.md).
