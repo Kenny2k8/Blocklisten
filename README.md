@@ -66,9 +66,9 @@ Die genauen Adressen zu jedem Thema stehen in [blocklisten.md](blocklisten.md).
 
 ## Nutzung
 
-Du darfst diese Listen nutzen. Dazu gehört das Einbinden in Pi-hole, Technitium und andere DNS-Sperren, das Kopieren der Dateien und das Weitergeben dieser Zusammenstellung.
+Diese Zusammenstellung steht unter [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Du darfst sie privat nutzen, kopieren und weitergeben, auch in Pi-hole, Technitium und anderen DNS-Sperren. Kommerzielle Nutzung ist nicht erlaubt. Als Namensnennung gilt der Verweis auf dieses Repository und auf [Quellen.md](Quellen.md).
 
-Die Domains stammen aus den Quellen in [Quellen.md](Quellen.md). Deren eigene Lizenz bleibt an den Ursprungsdaten. Die Freigabe hier gilt für die Zusammenstellung in diesem Repository.
+Die Domains stammen aus den Quellen in [Quellen.md](Quellen.md). Deren eigene Lizenz bleibt an den Ursprungsdaten. Der Lizenztext liegt in [LICENSE](LICENSE).
 
 ## Wenn sich die Listen ändern
 
