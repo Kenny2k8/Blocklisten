@@ -16,9 +16,9 @@ Kenny2k8 holt die Domains aus öffentlichen Quellen, sortiert sie nach Thema und
 | [listen/technitium/](listen/technitium) | Technitium | Nur Themen mit höchstens einer Million Domains |
 | [listen/adguard/](listen/adguard) | AdGuard Home | Dieselben Domains wie Technitium, als Adblock-Regeln |
 
-In der kleinen Fassung liegen Malware, Werbung, Fakeshops, Standard, Dienste und Overblock, zusammen etwa 1,55 Millionen Namen. Phishing, Jugendschutz, Tracking und Diverse bleiben bei Pi-hole. Die vier Themen sind zusammen etwa 44 Millionen Einträge.
+In der kleinen Fassung liegen Malware, Werbung und Tracking, dazu Fakeshops, Standard, Dienste und Overblock. Zusammen sind das etwa 2,2 Millionen Namen. Malware, Werbung und Tracking sind davon etwa 1,9 Millionen. Phishing, Jugendschutz und Diverse bleiben bei Pi-hole.
 
-Technitium hält jeden Namen im Arbeitsspeicher. Der Hersteller rechnet mit etwa 300 MB je Million Namen, und beim Aktualisieren liegt die neue Liste zusätzlich im Speicher, also grob das Doppelte. 1,55 Millionen Namen sind damit etwa 450 MB, beim Aktualisieren etwa 1 GB. Die 45 Millionen der Pi-hole-Fassung brauchen weit mehr als 8 GB. Der Server sitzt dann stundenlang am Speicherlimit.
+Technitium hält jeden Namen im Arbeitsspeicher. Der Hersteller rechnet mit etwa 300 MB je Million Namen, und beim Aktualisieren liegt die neue Liste zusätzlich im Speicher, also grob das Doppelte. 2,2 Millionen Namen sind damit etwa 660 MB, beim Aktualisieren etwa 1,3 GB. Die 45 Millionen der Pi-hole-Fassung brauchen weit mehr als 8 GB. Der Server sitzt dann stundenlang am Speicherlimit.
 
 ## Pi-hole
 
@@ -62,7 +62,7 @@ Eine Regel sieht so aus: `||example.com^`. AdGuard sperrt den Namen und alles da
 | Phishing | Phishing und nachgebaute Bank-Domains | nur Pi-hole |
 | Fakeshops | Falsche Shops und unseriöse Angebote | Pi-hole, Technitium, AdGuard |
 | Jugendschutz | Pornografie, Glücksspiel, Dating, Proxies | nur Pi-hole |
-| Tracking | Tracker und Telemetrie | nur Pi-hole |
+| Tracking | Tracker und Telemetrie | Pi-hole, Technitium, AdGuard |
 | Werbung | Werbenetze und Adserver | Pi-hole, Technitium, AdGuard |
 | Dienste | Einzelne Anbieter, etwa Amazon, Google, Samsung | Pi-hole, Technitium, AdGuard |
 | Diverse | Quellen, die in kein einzelnes Thema fallen | nur Pi-hole |
