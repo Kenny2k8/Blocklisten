@@ -15,6 +15,7 @@ Kenny2k8 holt die Domains aus öffentlichen Quellen, sortiert sie nach Thema und
 | [listen/pihole/](listen/pihole) | Pi-hole | Alle Themen, etwa 45 Millionen Domains |
 | [listen/technitium/](listen/technitium) | Technitium | Nur Themen mit höchstens einer Million Domains |
 | [listen/adguard/](listen/adguard) | AdGuard Home | Dieselben Domains wie Technitium, als Adblock-Regeln |
+| [listen/fritzbox/](listen/fritzbox) | FRITZ!Box ab FRITZ!OS 8.51 | Malware, Werbung und Tracking, je 70.000 Namen |
 
 In der kleinen Fassung liegen Malware, Werbung und Tracking, dazu Fakeshops, Standard, Dienste und Overblock. Zusammen sind das etwa 2,2 Millionen Namen. Malware, Werbung und Tracking sind davon etwa 1,9 Millionen. Phishing, Jugendschutz und Diverse bleiben bei Pi-hole.
 
@@ -54,16 +55,30 @@ Technitium nimmt höchstens 255 Listen-Adressen. Die kleine Fassung bleibt darun
 
 Eine Regel sieht so aus: `||example.com^`. AdGuard sperrt den Namen und alles darunter. Die Domains sind dieselben wie in der Technitium-Fassung. Die Adressen aus **Pi-hole** gehören auch hier nicht hinein.
 
+## FRITZ!Box
+
+FRITZ!OS 8.51 filtert DNS-Anfragen aus Heim- und Gastnetz. Die Box versteht Adblock-Regeln, Hosts-Zeilen und einzelne Domains. AVM legt keine Liste bei und rät zu wenigen Listen, weil doppelte Einträge den Speicher belasten. Werbung von derselben Domain wie der Inhalt, zum Beispiel auf YouTube, lässt sich damit nicht sperren.
+
+Die FRITZ!Box-Fassung enthält Malware, Werbung und Tracking, jeweils 70.000 kurze Namen, zusammen 210.000. Eine 7590 hat 512 MB für alles. Deutlich größere Listen schneidet sie ab oder der Speicher läuft voll. Eine Zeile enthält nur die Domain. Die Box sperrt diesen Namen und die Namen darunter.
+
+1. Öffne die Oberfläche der FRITZ!Box.
+2. Gehe zu **Heimnetz → Netzwerk → Netzwerkeinstellungen → Erweiterte Netzwerkeinstellungen ändern → DNS-Filter**.
+3. Aktiviere die Filterlisten.
+4. Füge die drei Adressen aus dem Abschnitt **FRITZ!Box** in [blocklisten.md](blocklisten.md) ein.
+5. Übernimm die Einstellung. Die Box lädt die Listen und erneuert sie regelmäßig.
+
+Die Geräte müssen die FRITZ!Box als DNS-Server nutzen. Die Box muss Router oder Mesh-Master sein, nicht Repeater.
+
 ## Themen
 
 | Thema | Was dort landet | Fassung |
 | --- | --- | --- |
-| Malware | Schadsoftware, Stalkerware, Cryptojacking | Pi-hole, Technitium, AdGuard |
+| Malware | Schadsoftware, Stalkerware, Cryptojacking | Pi-hole, Technitium, AdGuard, FRITZ!Box |
 | Phishing | Phishing und nachgebaute Bank-Domains | nur Pi-hole |
 | Fakeshops | Falsche Shops und unseriöse Angebote | Pi-hole, Technitium, AdGuard |
 | Jugendschutz | Pornografie, Glücksspiel, Dating, Proxies | nur Pi-hole |
-| Tracking | Tracker und Telemetrie | Pi-hole, Technitium, AdGuard |
-| Werbung | Werbenetze und Adserver | Pi-hole, Technitium, AdGuard |
+| Tracking | Tracker und Telemetrie | Pi-hole, Technitium, AdGuard, FRITZ!Box |
+| Werbung | Werbenetze und Adserver | Pi-hole, Technitium, AdGuard, FRITZ!Box |
 | Dienste | Einzelne Anbieter, etwa Amazon, Google, Samsung | Pi-hole, Technitium, AdGuard |
 | Diverse | Quellen, die in kein einzelnes Thema fallen | nur Pi-hole |
 | Standard | Die zusammengefasste Liste von StevenBlack | Pi-hole, Technitium, AdGuard |
@@ -85,4 +100,4 @@ Die Domains stammen aus den Quellen in [Quellen.md](Quellen.md). Deren eigene Li
 Kenny2k8 ergänzt neue Domains und legt sie in denselben Ordner. Die Adressen bleiben gleich, solange der Dateiname gleich bleibt. Neu einfügen musst du nur, wenn eine Datei hinzukommt oder wegfällt. Das steht dann in [blocklisten.md](blocklisten.md).
 
 > [!IMPORTANT]
-> Dieses Repository gehört nicht zu Pi-hole, Technitium oder AdGuard. Die Dateien hier sind Listen, die du dort importierst.
+> Dieses Repository gehört nicht zu Pi-hole, Technitium, AdGuard oder AVM. Die Dateien hier sind Listen, die du dort importierst.
