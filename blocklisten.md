@@ -191,13 +191,14 @@ https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/pihole/stan
 
 ## Technitium
 
-Hosts-Fassung nur für Themen mit höchstens einer Million Domains. Technitium sperrt den Namen und alles darunter.
+Kleine Hosts-Fassung. Ein kürzerer Name deckt alle längeren Namen darunter ab, die stehen hier nicht noch einmal. Technitium braucht etwa 300 MB Arbeitsspeicher je Million Namen und beim Aktualisieren doppelt so viel.
 
-Es sind 6 Adressen.
+Es sind 7 Adressen.
 
 ```
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/malware.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/fakeshops.txt
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/tracking.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/werbung.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/dienste.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/overblock.txt
@@ -218,6 +219,14 @@ Falsche Shops und unseriöse Angebote.
 
 ```
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/fakeshops.txt
+```
+
+### Technitium: Tracking
+
+Tracker und Telemetrie.
+
+```
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/tracking.txt
 ```
 
 ### Technitium: Werbung
@@ -254,13 +263,14 @@ https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/technitium/
 
 ## AdGuard
 
-Dieselben Domains wie Technitium, als Adblock-Regeln.
+Dieselben Domains wie Technitium, als Adblock-Regeln. Auch hier deckt ein kürzerer Name die Namen darunter ab.
 
-Es sind 6 Adressen.
+Es sind 7 Adressen.
 
 ```
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/malware.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/fakeshops.txt
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/tracking.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/werbung.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/dienste.txt
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/overblock.txt
@@ -281,6 +291,14 @@ Falsche Shops und unseriöse Angebote.
 
 ```
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/fakeshops.txt
+```
+
+### AdGuard: Tracking
+
+Tracker und Telemetrie.
+
+```
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/tracking.txt
 ```
 
 ### AdGuard: Werbung
