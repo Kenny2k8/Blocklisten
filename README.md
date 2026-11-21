@@ -16,9 +16,9 @@ Kenny2k8 holt die Domains aus öffentlichen Quellen, sortiert sie nach Thema und
 | [listen/technitium/](listen/technitium) | Technitium | Nur Themen mit höchstens einer Million Domains |
 | [listen/adguard/](listen/adguard) | AdGuard Home | Dieselben Domains wie Technitium, als Adblock-Regeln |
 
-In der kleinen Fassung liegen Malware, Werbung, Fakeshops, Standard, Dienste und Overblock. Phishing, Jugendschutz, Tracking und Diverse bleiben bei Pi-hole. Die vier Themen sind zusammen etwa 44 Millionen Einträge.
+In der kleinen Fassung liegen Malware, Werbung, Fakeshops, Standard, Dienste und Overblock, zusammen etwa 1,55 Millionen Namen. Phishing, Jugendschutz, Tracking und Diverse bleiben bei Pi-hole. Die vier Themen sind zusammen etwa 44 Millionen Einträge.
 
-Technitium hält die Domains im Arbeitsspeicher, ungefähr 300 MB je Million, und beim Aktualisieren noch einmal so viel. AdGuard Home nennt für den normalen Schutz höchstens eine Million Regeln. Die kleine Fassung hat etwa 1,7 Millionen Domains.
+Technitium hält jeden Namen im Arbeitsspeicher. Der Hersteller rechnet mit etwa 300 MB je Million Namen, und beim Aktualisieren liegt die neue Liste zusätzlich im Speicher, also grob das Doppelte. 1,55 Millionen Namen sind damit etwa 450 MB, beim Aktualisieren etwa 1 GB. Die 45 Millionen der Pi-hole-Fassung brauchen weit mehr als 8 GB. Der Server sitzt dann stundenlang am Speicherlimit.
 
 ## Pi-hole
 
@@ -40,7 +40,10 @@ Eine Zeile sieht so aus: `0.0.0.0 example.com`. Zeilen mit `#` am Anfang sind Hi
 3. Trage unter **Block List URLs** die Adressen aus dem Abschnitt **Technitium** in [blocklisten.md](blocklisten.md) ein, eine pro Zeile.
 4. Speichere. Technitium lädt die Listen beim nächsten Abruf.
 
-Technitium nimmt höchstens 255 Listen-Adressen. Die kleine Fassung bleibt darunter. Technitium sperrt einen Namen und alles darunter. Steht `example.com` in der Liste, fallen dort auch `www.example.com` und `shop.example.com` weg.
+Technitium nimmt höchstens 255 Listen-Adressen. Die kleine Fassung bleibt darunter. Technitium sperrt einen Namen und alles darunter. Steht `example.com` in der Liste, fallen dort auch `www.example.com` und `shop.example.com` weg. Solche längeren Namen stehen in der Technitium-Fassung nicht noch einmal.
+
+> [!WARNING]
+> Trag in Technitium nur die Adressen aus dem Abschnitt **Technitium** ein. Die Adressen aus **Pi-hole** laden die 45 Millionen Namen. Dafür reichen 8 GB nicht. Alte Adressen unter `listen/pihole/` in den Block List URLs löschen, speichern, und die schon heruntergeladenen Dateien im Ordner `blocklists` der Technitium-Konfiguration entfernen. Sonst lädt der nächste Abruf die große Fassung wieder.
 
 ## AdGuard Home
 
@@ -49,7 +52,7 @@ Technitium nimmt höchstens 255 Listen-Adressen. Die kleine Fassung bleibt darun
 3. Füge die Adressen aus dem Abschnitt **AdGuard** in [blocklisten.md](blocklisten.md) ein.
 4. Speichere und lade die Filter neu.
 
-Eine Regel sieht so aus: `||example.com^`. AdGuard sperrt den Namen und alles darunter. Die Domains sind dieselben wie in der Technitium-Fassung.
+Eine Regel sieht so aus: `||example.com^`. AdGuard sperrt den Namen und alles darunter. Die Domains sind dieselben wie in der Technitium-Fassung. Die Adressen aus **Pi-hole** gehören auch hier nicht hinein.
 
 ## Themen
 
