@@ -1,0 +1,7 @@
+# Blockliste overblock
+# https://github.com/Kenny2k8/Blocklisten/blob/master/Quellen.md
+# https://github.com/RPiList/specials
+0.0.0.0 baidu.com
+0.0.0.0 buff.ly
+0.0.0.0 mystrikingly.com
+0.0.0.0 qrco.de
