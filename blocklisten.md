@@ -332,3 +332,39 @@ Die zusammengefasste Hosts-Liste von StevenBlack.
 ```
 https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/adguard/standard.txt
 ```
+
+## FRITZ!Box
+
+Kleine Fassung für FRITZ!OS ab 8.51. Eine Domain je Zeile, höchstens 70.000 je Thema. Malware, Werbung und Tracking.
+
+Es sind 3 Adressen.
+
+```
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/fritzbox/malware.txt
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/fritzbox/tracking.txt
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/fritzbox/werbung.txt
+```
+
+### FRITZ!Box: Malware
+
+Schadsoftware, Stalkerware und Cryptojacking.
+
+```
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/fritzbox/malware.txt
+```
+
+### FRITZ!Box: Tracking
+
+Tracker und Telemetrie.
+
+```
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/fritzbox/tracking.txt
+```
+
+### FRITZ!Box: Werbung
+
+Werbenetze und Adserver.
+
+```
+https://raw.githubusercontent.com/Kenny2k8/Blocklisten/master/listen/fritzbox/werbung.txt
+```
